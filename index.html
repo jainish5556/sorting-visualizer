@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+
+            background-color: black;}
+
+        .container {
+            display: flex;
+
+            width: 50vw;
+            height: 60vh;
+            justify-content: center;
+            position: relative;
+            top: 25vh;
+            left: 23vw;
+            
+
+        }
+
+
+        .con {
+            background-color: aqua;
+            
+        }
+
+        .second{
+            width: 30px;
+            height: 40px;
+            margin-right: 10px;
+            text-align: center;
+            /* border: 2px solid white; */
+            box-shadow: 0 0 22px rgb(115, 181, 219);
+color: aqua;
+        }
+
+        #click {
+            width: 50px;
+            height: 30px;
+            position: relative;
+            bottom: 420px;
+            left: 35vw;
+            background-color: aqua;
+
+            border-radius: 10px;
+            transition: .5s;
+        }
+
+        #click:hover {
+            box-shadow: 0 0 20px rgb(115, 181, 219);
+            transform: scale(1.2);
+        }
+
+        .con:hover {
+
+            transform: scale(1.1);
+        }
+
+        nav {
+            background-color: aqua;
+            height: 40px;
+            width: 100vw;
+            box-shadow: 0 0 30px rgb(115, 181, 219);
+
+        }
+
+        ul {
+            display: flex;
+
+        }
+
+        li {
+            list-style: none;
+            margin-left: 20px;
+            padding: 10px;
+
+        }
+
+        select {            height: 25px;
+            width: 115px;
+            background-color: rgb(69, 48, 67);
+            color: aqua;
+            border-radius: 8px;
+            font-size: 1vw;
+            padding-bottom: 2px;
+            margin: -9px; 
+        }
+
+        #speed{
+
+            position: relative;
+            bottom: 52vh;
+left:40vw;
+color: white;
+-webkit-appearance: none;
+background: aqua;
+width: 16vw;
+height: 9px;
+border-radius: 5px;
+cursor: pointer;
+
+box-shadow: 0 0 23px aqua;
+
+;
+         }
+
+         @media only screen and (max-width:333px){
+.second{
+    width:24px;
+    /* margin-left: 23px; */
+}
+
+.container{
+    margin-left: 12px;
+}
+
+#click{
+    position: relative;
+    bottom:365px;
+    height: 25px;
+    width: 40px;
+    left: 40px;
+}
+
+#speed{
+
+position: relative;
+bottom: 51.5vh;
+width: 120px;
+left: 70px;
+         }
+
+         select{
+            font-size: 4vw;
+         }
+
+        }
+
+
+
+
+
+
+
+
+
+        
+    </style>
+
+
+</head>
+
+<body>
+    <nav>
+        <ul>
+
+            <li><select>
+                    <option value="">Bubble sort</option>
+                    <option value="">Quick sort</option>
+                    <option value=""> Selection sort</option>
+                    <option value="">Insertion sort</option>
+
+                </select></li>
+
+            <li>Start</li>
+
+        </ul>
+
+
+    </nav>
+    <main class="container" id="first">
+        <div id="o0" class="con second">1</div>
+        <div id="o1" class="con second">1</div>
+        <div id="o2" class="con second">1</div>
+        <div id="o3" class="con second">1</div>
+        <div id="o4" class="con second">1</div>
+        <div id="o5" class="con second">1</div>
+        <div id="o6" class="con second">1</div>
+        <div id="o7" class="con second">1</div>
+        <div id="o8" class="con second">1</div>
+        <div id="o9" class="con second">1</div>
+        <div id="o10" class="con second">1</div>
+        <div id="o11" class="con second">1</div>
+        <div id="o12" class="con second">1</div>
+        <div id="o13" class="con second">1</div>
+
+    </main>
+    <button id='click'> Go </button>
+<input type="range" name="" id="speed" >
+    <script src="s.js"></script>
+</body>
+
+</html>
